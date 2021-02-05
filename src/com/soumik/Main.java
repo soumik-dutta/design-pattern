@@ -1,12 +1,16 @@
 package com.soumik;
 
-import com.soumik.strategy_pattern.StrategyPatternMainExecutor;
+import com.soumik.observer.ObserverPatternMainExecutor;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        MainExecutor mainExecutor = new StrategyPatternMainExecutor();
+        MainExecutor mainExecutor;
+        // Strategy Pattern
+//        mainExecutor = new StrategyPatternMainExecutor();
+        // Observer Pattern
+        mainExecutor = new ObserverPatternMainExecutor();
         mainExecutor.execute();
     }
 }
