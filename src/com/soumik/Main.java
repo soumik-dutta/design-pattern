@@ -1,6 +1,6 @@
 package com.soumik;
 
-import com.soumik.observer.ObserverPatternMainExecutor;
+import com.soumik.decorator.DecoratorPatternMainExecutor;
 
 public class Main {
 
@@ -10,7 +10,9 @@ public class Main {
         // Strategy Pattern
 //        mainExecutor = new StrategyPatternMainExecutor();
         // Observer Pattern
-        mainExecutor = new ObserverPatternMainExecutor();
+//        mainExecutor = new ObserverPatternMainExecutor();
+        // decorator
+        mainExecutor = new DecoratorPatternMainExecutor();
         mainExecutor.execute();
     }
 }
